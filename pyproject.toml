@@ -46,14 +46,27 @@ classifiers = [
 
 dependencies = [
     "aiocoap>=0.4.17",
+    "anyio>=4.14.2",
     "cbor2>=6.1.3",
     "pydantic>=2.13.4",
+    "rich>=15.0.0",
     "typer>=0.26.8",
+    "watchfiles>=1.2.0",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["fastcoap"]
 
 
 [project.scripts]
-fastcoap = "fastcoap.cli:main"
+fastcoap = "fastcoap.cli:app"
 
 [project.urls]
 Homepage = "https://github.com/darixsamni/fastcoap"
