@@ -34,7 +34,7 @@ Coming soon...
 
 ## Source Code
 
-https://github.com/darixsamani/FastCoAP
+https://github.com/darixsamani/fastcoap
 
 ---
 
