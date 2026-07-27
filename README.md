@@ -1,28 +1,28 @@
 <p align="center">
-  <a href="https://github.com/your-org/fastcoap">
-    <img src="https://github.com/user-attachments/assets/2448451a-9625-4f02-885f-45b0c8d1505d" alt="FastCOAP">
+  <a href="https://github.com/your-org/FastCoAP">
+    <img src="https://github.com/user-attachments/assets/2448451a-9625-4f02-885f-45b0c8d1505d" alt="FastCoAP">
   </a>
 </p>
 
 <p align="center">
-    <em>FastCOAP — a modern, high-performance Python framework for building CoAP applications and APIs.</em>
+    <em>FastCoAP — a modern, high-performance Python framework for building CoAP applications and APIs.</em>
 </p>
 
 <p align="center">
 <a href="https://python.org">
     <img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python">
 </a>
-<a href="https://github.com/your-org/fastcoap/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/darixsamani/fastcoap/tests.yml?label=tests" alt="Tests">
+<a href="https://github.com/your-org/FastCoAP/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/darixsamani/FastCoAP/tests.yml?label=tests" alt="Tests">
 </a>
-<a href="https://pypi.org/project/fastcoap">
-    <img src="https://img.shields.io/pypi/v/fastcoap?color=%23009688&label=PyPI" alt="PyPI Version">
+<a href="https://pypi.org/project/FastCoAP">
+    <img src="https://img.shields.io/pypi/v/FastCoAP?color=%23009688&label=PyPI" alt="PyPI Version">
 </a>
-<a href="https://pypi.org/project/fastcoap">
-    <img src="https://img.shields.io/pypi/pyversions/fastcoap?color=%23009688" alt="Python Versions">
+<a href="https://pypi.org/project/FastCoAP">
+    <img src="https://img.shields.io/pypi/pyversions/FastCoAP?color=%23009688" alt="Python Versions">
 </a>
 <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/darixsamani/fastcoap" alt="License">
+    <img src="https://img.shields.io/github/license/darixsamani/FastCoAP" alt="License">
 </a>
 </p>
 
@@ -34,13 +34,13 @@ Coming soon...
 
 ## Source Code
 
-https://github.com/darixsamani/fastcoap
+https://github.com/darixsamani/FastCoAP
 
 ---
 
-**FastCOAP** is a modern, fast (high-performance) Python framework for building **CoAP (Constrained Application Protocol)** applications based on standard Python type hints.
+**FastCoAP** is a modern, fast (high-performance) Python framework for building **CoAP (Constrained Application Protocol)** applications based on standard Python type hints.
 
-Inspired by **FastAPI**, FastCOAP brings the same developer experience to the Internet of Things, making it easy to build scalable, maintainable, and production-ready CoAP services.
+Inspired by **FastAPI**, FastCoAP brings the same developer experience to the Internet of Things, making it easy to build scalable, maintainable, and production-ready CoAP services.
 
 ## Key Features
 
@@ -53,11 +53,11 @@ Inspired by **FastAPI**, FastCOAP brings the same developer experience to the In
 - 🔒 **Reliable** — Built with robustness, scalability, and maintainability in mind.
 - 🐍 **Pythonic** — Leverages standard Python type annotations for an excellent developer experience.
 
-## Why FastCOAP?
+## Why FastCoAP?
 
 Building CoAP applications shouldn't feel different from building modern HTTP APIs.
 
-FastCOAP provides an elegant programming model inspired by FastAPI while embracing the CoAP ecosystem. Whether you're developing applications for IoT devices, smart homes, industrial automation, or sensor networks, FastCOAP helps you write less code and ship faster.
+FastCoAP provides an elegant programming model inspired by FastAPI while embracing the CoAP ecosystem. Whether you're developing applications for IoT devices, smart homes, industrial automation, or sensor networks, FastCoAP helps you write less code and ship faster.
 
 
 ---
@@ -65,12 +65,12 @@ FastCOAP provides an elegant programming model inspired by FastAPI while embraci
 ## Project Structure
 
 ```
-fastcoap/
+FastCoAP/
 ├── pyproject.toml          # uv project file, dependencies, CLI entry point
 ├── README.md
-├── fastcoap/
+├── FastCoAP/
 │   ├── __init__.py         # Public API re-exports
-│   ├── application.py      # FastCOAP class, dispatcher, aiocoap bridge, serve()
+│   ├── application.py      # FastCoAP class, dispatcher, aiocoap bridge, serve()
 │   ├── routing.py          # Router, Route, path-to-regex compiler
 │   ├── request.py          # CoapRequest wrapper around aiocoap.Message
 │   ├── response.py         # CoapResponse → aiocoap.Message conversion
@@ -90,12 +90,12 @@ fastcoap/
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                  fastcoap CLI (Typer)                │
-│           fastcoap run main:app --reload             │
+│                  FastCoAP CLI (Typer)                │
+│           FastCoAP run main:app --reload             │
 └───────────────────────┬─────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
-│                  FastCOAP application                │
+│                  FastCoAP application                │
 │        lifespan · routers · middleware ·             │
 │                                  │
 └──────┬──────────────────────────────┬───────────────┘
@@ -129,7 +129,7 @@ CoAP UDP packet
 aiocoap.Context  →  _WildcardSite  →  _RouteResource.render()
       │
       ▼
-FastCOAP._dispatch()
+FastCoAP._dispatch()
   1. Wrap aiocoap.Message → CoapRequest
   2. Detect Content-Format (JSON or CBOR)
   3. Run middleware stack
@@ -139,8 +139,8 @@ FastCOAP._dispatch()
        ├── extract + coerce path params
        ├── extract + coerce query params
        └── parse + validate body with Pydantic
-  7. Normalise result → CoapResponse
-  8. CoapResponse.to_message() → aiocoap.Message
+  6. Normalise result → CoapResponse
+  7. CoapResponse.to_message() → aiocoap.Message
       │
       ▼
 CoAP UDP response
@@ -166,7 +166,7 @@ uv pip install -e .
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 from pydantic import BaseModel
-from fastcoap import FastCOAP, CoapResponse, Depends, Path, NotFound
+from FastCoAP import FastCoAP, CoapResponse, Depends, Path, NotFound
 
 class Sensor(BaseModel):
     name: str
@@ -175,12 +175,12 @@ class Sensor(BaseModel):
 _db: dict[int, Sensor] = {}
 
 @asynccontextmanager
-async def lifespan(app: FastCOAP) -> AsyncGenerator[dict, None]:
+async def lifespan(app: FastCoAP) -> AsyncGenerator[dict, None]:
     print("startup")
     yield {"db": _db}
     print("shutdown")
 
-app = FastCOAP(title="Sensor API", lifespan=lifespan)
+app = FastCoAP(title="Sensor API", lifespan=lifespan)
 
 async def get_db() -> dict:
     return _db
@@ -201,15 +201,15 @@ async def create_sensor(sensor: Sensor, db: dict = Depends(get_db)):
 ### 3. Run
 
 ```bash
-fastcoap run main:app
-fastcoap run main:app --reload          # auto-reload on file changes
-fastcoap run main:app --host 0.0.0.0 --port 5683
+FastCoAP run main:app
+FastCoAP run main:app --reload          # auto-reload on file changes
+FastCoAP run main:app --host 0.0.0.0 --port 5683
 ```
 
 ### 4. Inspect routes
 
 ```bash
-fastcoap routes main:app
+FastCoAP routes main:app
 ```
 
 ---
@@ -217,14 +217,14 @@ fastcoap routes main:app
 ## CLI Reference
 
 ```
-fastcoap run MODULE:APP [OPTIONS]
+FastCoAP run MODULE:APP [OPTIONS]
 
   --host TEXT        Bind host            [default: 0.0.0.0]
   --port INTEGER     CoAP UDP port        [default: 5683]
   --reload           Auto-reload on file changes
   --log-level TEXT   Logging level        [default: info]
 
-fastcoap routes MODULE:APP
+FastCoAP routes MODULE:APP
   List all registered routes in a Rich table.
 ```
 
@@ -257,7 +257,7 @@ async def list_sensors(
 ### Sub-routers
 
 ```python
-from fastcoap import Router
+from FastCoAP import Router
 
 sensors_router = Router(prefix="/sensors", tags=["sensors"])
 
@@ -276,7 +276,7 @@ app.include_router(sensors_router, prefix="/v2")
 
 ## Request Body & Validation
 
-Annotate a handler parameter with a Pydantic model and FastCOAP automatically parses and validates the incoming payload — JSON or CBOR, whichever Content-Format the client sent.
+Annotate a handler parameter with a Pydantic model and FastCoAP automatically parses and validates the incoming payload — JSON or CBOR, whichever Content-Format the client sent.
 
 ```python
 from pydantic import BaseModel, Field
@@ -294,7 +294,7 @@ async def create(reading: SensorReading):
 You can also use the explicit `Body()` descriptor:
 
 ```python
-from fastcoap import Body
+from FastCoAP import Body
 
 @app.put("/sensors/{id}")
 async def update(
@@ -311,7 +311,7 @@ async def update(
 `Depends()` works for both sync and async callables. Results are cached for the duration of a single request.
 
 ```python
-from fastcoap import Depends
+from FastCoAP import Depends
 
 async def get_db():
     return _db
@@ -334,7 +334,7 @@ async def secure_route(
 
 ## Encodings
 
-FastCOAP reads the CoAP `Content-Format` option on every incoming message and dispatches to the right codec automatically:
+FastCoAP reads the CoAP `Content-Format` option on every incoming message and dispatches to the right codec automatically:
 
 | Content-Format | Value | Codec |
 |---|---|---|
@@ -344,7 +344,7 @@ FastCOAP reads the CoAP `Content-Format` option on every incoming message and di
 Responses default to JSON. To reply with CBOR:
 
 ```python
-from fastcoap import CoapResponse, ContentFormat
+from FastCoAP import CoapResponse, ContentFormat
 
 @app.get("/data/")
 async def get_data():
@@ -366,20 +366,20 @@ Two styles are supported — pick whichever feels natural.
 from contextlib import asynccontextmanager
 
 @asynccontextmanager
-async def lifespan(app: FastCOAP):
+async def lifespan(app: FastCoAP):
     # startup — runs before the server accepts connections
     db = await connect_db()
     yield {"db": db}          # dict is merged into app.state
     # shutdown — runs after the server stops
     await db.close()
 
-app = FastCOAP(lifespan=lifespan)
+app = FastCoAP(lifespan=lifespan)
 ```
 
 ### Hook style
 
 ```python
-app = FastCOAP()
+app = FastCoAP()
 
 @app.on_startup
 async def startup():
@@ -407,7 +407,7 @@ async def shutdown():
 ## Middleware
 
 ```python
-from fastcoap import CoapRequest, CoapResponse
+from FastCoAP import CoapRequest, CoapResponse
 
 async def logging_middleware(request: CoapRequest, call_next):
     print(f"→ {request.method} {request.path}")
@@ -428,7 +428,7 @@ app.add_middleware(logging_middleware)
 | `aiocoap` | Async CoAP server and client |
 | `pydantic >= 2.0` | Request body validation and serialisation |
 | `cbor2` | CBOR encoding / decoding |
-| `typer` | CLI (`fastcoap run`, `fastcoap routes`) |
+| `typer` | CLI (`FastCoAP run`, `FastCoAP routes`) |
 | `rich` | Pretty terminal output |
 | `anyio` | Async primitives |
 | `watchfiles` | `--reload` file watcher |
