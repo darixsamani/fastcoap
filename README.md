@@ -14,17 +14,17 @@
 <a href="https://python.org">
     <img src="https://img.shields.io/badge/python-3.11+-blue.svg" alt="Python">
 </a>
-<a href="https://github.com/your-org/FastCoAP/actions">
+<a href="https://github.com/darixsamani/fastcoap/actions">
     <img src="https://img.shields.io/github/actions/workflow/status/darixsamani/FastCoAP/tests.yml?label=tests" alt="Tests">
 </a>
-<a href="https://pypi.org/project/FastCoAP">
-    <img src="https://img.shields.io/pypi/v/FastCoAP?color=%23009688&label=PyPI" alt="PyPI Version">
+<a href="https://pypi.org/project/fastcoap">
+    <img src="https://img.shields.io/pypi/v/fastcoap?color=%23009688&label=PyPI" alt="PyPI Version">
 </a>
-<a href="https://pypi.org/project/FastCoAP">
-    <img src="https://img.shields.io/pypi/pyversions/FastCoAP?color=%23009688" alt="Python Versions">
+<a href="https://pypi.org/project/fastcoap">
+    <img src="https://img.shields.io/pypi/pyversions/fastcoap?color=%23009688" alt="Python Versions">
 </a>
 <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/darixsamani/FastCoAP" alt="License">
+    <img src="https://img.shields.io/github/license/darixsamani/fastcoap" alt="License">
 </a>
 </p>
 
