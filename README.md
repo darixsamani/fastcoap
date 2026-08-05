@@ -46,14 +46,14 @@ Inspired by **FastAPI**, FastCoAP brings the same developer experience to the In
 
 ## Key Features
 
-- ⚡ **Fast** — High-performance asynchronous framework built for CoAP communication.
-- 🌐 **IoT-first** — Designed specifically for connected devices, edge computing, and constrained networks.
-- 📡 **Native CoAP** — Full support for the Constrained Application Protocol.
-- 🧩 **Simple & Intuitive** — Clean API inspired by FastAPI, with minimal boilerplate.
-- 🚀 **Developer Friendly** — Modern Python features, type hints, dependency injection, and automatic validation.
-- 📦 **Production Ready** — Modular architecture suitable for embedded systems, gateways, and cloud IoT platforms.
-- 🔒 **Reliable** — Built with robustness, scalability, and maintainability in mind.
-- 🐍 **Pythonic** — Leverages standard Python type annotations for an excellent developer experience.
+- ⚡ **Fast** :  High-performance asynchronous framework built for CoAP communication.
+- 🌐 **IoT-first** : Designed specifically for connected devices, edge computing, and constrained networks.
+- 📡 **Native CoAP** : Full support for the Constrained Application Protocol.
+- 🧩 **Simple & Intuitive** : Clean API inspired by FastAPI, with minimal boilerplate.
+- 🚀 **Developer Friendly** : Modern Python features, type hints, dependency injection, and automatic validation.
+- 📦 **Production Ready** : Modular architecture suitable for embedded systems, gateways, and cloud IoT platforms.
+- 🔒 **Reliable** : Built with robustness, scalability, and maintainability in mind.
+- 🐍 **Pythonic** : Leverages standard Python type annotations for an excellent developer experience.
 
 ## Why FastCoAP?
 
