@@ -7,7 +7,7 @@
 
 
 <p align="center">
-    <em>FastCoAP — a modern, high-performance Python framework for building CoAP applications and APIs.</em>
+    <em>FastCoAP is a modern, high-performance Python framework for building CoAP applications and APIs.</em>
 </p>
 
 <p align="center">
