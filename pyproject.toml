@@ -71,6 +71,6 @@ fastcoap = "fastcoap.cli:app"
 [project.urls]
 Homepage = "https://github.com/darixsamni/fastcoap"
 Documentation = "https://fastcoap.darixsamani.com/"
-Repository = "https://github.com/darixsamni/fastcoap"
-Issues = "https://github.com/darixsamni/fastcoap/issues"
+Repository = "https://github.com/darixsamani/fastcoap"
+Issues = "https://github.com/darixsamani/fastcoap/issues"
 Changelog = "https://fastcoap.darixsamani.com/release-notes/"
