@@ -23,6 +23,12 @@
 <a href="https://pypi.org/project/fastcoap">
     <img src="https://img.shields.io/pypi/pyversions/fastcoap?color=%23009688" alt="Python Versions">
 </a>
+<a href="https://pypi.org/project/fastcoap">
+    <img src="https://img.shields.io/pypi/dm/fastcoap?color=%23009688&label=downloads%2Fmonth" alt="Monthly Downloads">
+</a>
+<a href="https://pepy.tech/project/fastcoap">
+    <img src="https://static.pepy.tech/badge/fastcoap" alt="Total Downloads">
+</a>
 <a href="LICENSE">
     <img src="https://img.shields.io/github/license/darixsamani/fastcoap" alt="License">
 </a>
